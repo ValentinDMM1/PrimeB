@@ -18,13 +18,14 @@ header nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 header .logo_desktop {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-    margin: 20px 10px;
+    margin: 10px 10px;
     color: white;
 }
 
@@ -37,6 +38,7 @@ header .logo_desktop a {
 
 header .logo_desktop a:hover {
     text-decoration: underline;
+    color: red;
 }
 
 header .menu_desktop_hidden {
@@ -67,6 +69,7 @@ header .menu_desktop_hidden li a {
 
 header .menu_desktop_hidden li a:hover {
     text-decoration: underline;
+    color: red;
 }
 
 @media (min-width: 550px) {
@@ -76,3 +79,66 @@ header .menu_desktop_hidden li a:hover {
 }
 
 
+main .bikes_grid_container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 10px;
+    grid-gap: 1em;
+    position: relative;
+}
+
+.button_left {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 2;
+    background-color: black;
+}
+
+
+
+.button_right {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    z-index: 2;
+    background-color: black;
+    
+}
+
+.interesting_title {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 5vw;
+    left: 15%;
+    top: 10%;
+}
+
+
+.interesting_title a {
+    text-decoration: none;
+    color: white;
+}
+
+.interesting_title a:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: red;
+}
+
+.read_more {
+    padding: 0 0 0 10px;
+}
+
+
+.background_f10 {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.background_nytro {
+    position: relative;
+    z-index: 1;
