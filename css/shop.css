@@ -1,0 +1,73 @@
+main .show_filter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+
+.converter_online {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.style_convert {
+    text-align: center;
+}
+
+.converter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+}
+
+.border_area_conv {
+    padding: 10px 10px 10px 10px;
+}
+
+.about_bike {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive
+}
+
+.main_text {
+    text-align: center;
+} 
+
+.cont_filtre_choose {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.show_categories {
+    font-size: 110%;
+    
+}
+
+.show_gender {
+    font-size: 110%;
+}
+
+.grid_shopping {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}

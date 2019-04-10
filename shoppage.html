@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bikes</title>
     <link rel="icon" href="img_h/title_logo_pb.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
-<body>
+<body style="background-image:url(img_h/fon_social.jpg)">
     
     <header class="navigation_bar">
         <nav>
@@ -43,22 +46,24 @@
     <main>
         <div class="control_bar">
             <div class="show_filter">
-                <div class="hide"><img src="img_sh/menu_logo.png" alt="button to hide filter" style="width:100px; height: 100px">
-                    <span class="filter_text">HIDE FILTER</span>
+                <div class="hide"><img src="img_sh/menu_logo.png" alt="button to hide filter" style="width:30px; height: 30px">
+                    <span class="filter_text">FILTER</span>
                 </div>
                 
-                <div class="by_price"><img src="img_sh/sort1.png" alt="Button to sort list by price" style="width:100px; height: 100px">
+                <div class="by_price"><img src="img_sh/sort1.png" alt="Button to sort list by price" style="width:30px; height: 30px">
                     <span class="sort_price_text"><img src="img_sh/sort2.png" 
-                    alt="button to sort list by price" style="width:100px; height: 100px">SORTING BY PRICE</span>
-                </div> <br>
-                <div class="by_date"><img src="img_sh/sort3.png" alt="Button to sort list by date" style="width:100px; height: 100px">
-                    <span class="sort_date_text">SORTING BY DATE</span>
+                    alt="button to sort list by price" style="width:30px; height: 30px">PRICE</span>
+                </div>
+                <div class="by_date"><img src="img_sh/sort3.png" alt="Button to sort list by date" style="width:30px; height: 30px">
+                    <span class="sort_date_text">DATE</span>
                 </div>
             </div>
         </div>
         
         
-        <div class="show_categories"><img src="img_sh/minus.png" alt="Button to hide categories" style="width:100px; height: 100px">
+<div class="grid_shopping">        
+    <div class="cont_filtre_choose">    
+        <div class="show_categories"> <!--<img src="img_sh/minus.png" alt="Button to hide categories" style="width:30px; height: 30px"> -->
             <div class="categories_text">CATEGORIES</div>
                 <aside class="categories">
                     <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
@@ -69,7 +74,7 @@
                 </aside>
         </div>
         
-        <div class="show_gender"><img src="img_sh/minus.png" alt="button to hide gender" style="width:100px; height: 100px">
+        <div class="show_gender"> <!--<img src="img_sh/minus.png" alt="button to hide gender" style="width:30px; height: 30px">-->
             <div class="gender_text">GENDER</div>
                 <aside class="gender">
                     <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
@@ -79,8 +84,9 @@
                     </form>
                 </aside>
         </div>
+    </div>
         
-        <div class="shopping_area">
+ <!--       <div class="shopping_area">
             <table id="bikelist" style="width:100%" border="1">
                 <tr>
                     <td>
@@ -243,9 +249,398 @@
                 </tr>
             </table>
         </div>
+-->
+
+                <div class="row mx-lg-1">
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/s-works-venge/p/154588?color=255233-154588">
+                    <img src="img_sh/s-works_venge.png" class="card-img-top_1" alt="Bike S-Works Venge" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works Venge</h5> 
+                        <p class="card-text"> $12,520.00 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_1" > Info </a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div> 
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/mens-tarmac-disc-comp/p/154557?color=227227-154557"> 
+                    <img src="img_sh/men's_tarmac_disc_comp.png" class="card-img-top_2" alt="Bike S-Works Men's Tarmac Disc Comp" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Men's Tarmac Disc Comp </h5>
+                        <p class="card-text">$3,374.99</p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_2" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/roubaix-comp/p/154469?color=227322-154469"> 
+                    <img src="img_sh/roubaix_comp.png" class="card-img-top_3" alt="Bike S-Works Roubaix Comp" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Roubaix Comp </h5>
+                        <p class="card-text">$3,149.99</p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_3" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/womens-tarmac-disc-comp/p/154570?color=237261-154570"> 
+                    <img src="img_sh/women's_tarmac_disc_comp.png" class="card-img-top_4" alt="Bike S-Works Women's Tarmac Disc Comp" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Women's Tarmac Disc Comp </h5>
+                        <p class="card-text"> $3,374.99 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_4" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/womens-pitch-sport/p/154423?color=236361-154423"> 
+                    <img src="img_sh/women's_pitch_sport.png" class="card-img-top_5" alt="Bike S-Works Women's Pitch Sport" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Women's Pitch Sport </h5>
+                        <p class="card-text"> $574.99 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_5" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/mens-rockhopper-sport/p/129117?color=240213-129117"> 
+                    <img src="img_sh/men's_rockhopper_sport.png" class="card-img-top_6" alt="Bike S-Works Men's Rockhopper Sport" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Men's Rockhopper Sport </h5>
+                        <p class="card-text"> $659.99 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_6" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/mens-turbo-levo-expert/p/154388?color=239491-154388"> 
+                    <img src="img_sh/men's_turbo_levo_expert.png" class="card-img-top_7" alt="Bike S-Works Men's Turbo Levo Expert" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Men's Turbo Levo Expert </h5>
+                        <p class="card-text"> $8,250.00 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_7" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/us/en/riprock-24/p/128947?color=239718-128947"> 
+                    <img src="img_sh/riprock_24.png" class="card-img-top_8" alt="Bike S-Works Riprock 24" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works Riprock 24 </h5>
+                        <p class="card-text"> $525.00 </p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo_8" >Info</a>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-4">
+                    <a href="https://primeb-dmm1vr.c9users.io/shoppage.html">
+                    <img src="img_sh/next_page.png" class="card-img-top" alt="symbol of nextpage" style="width: 50%">
+                      <div class="card-body">
+                        <h5 class="card-title"> Next page </h5>
+                     </div> </a>
+                </article>
+                </div>
+
+<div class="modal fade" id="productInfo_1" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_1"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/s-works_venge.png" class="card-img-top_1" alt="Bike S-Works Venge" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Venge</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> OSBB, CeramicSpeed bearings. <br>
+                            <b>CHAIN :</b> Shimano Dura-Ace, 11-speed. <br>
+                            <b>CRANKSET :</b> S-Works Power Cranks, dual-sided power measurement, +/- 1.5% accuracy. <br>
+                            <b>SHIFT LEVERS :</b> Shimano Dura-Ace Di2 Disc R917. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Dura-Ace Di2 R9150, braze-on. <br>
+                            <b>CASSETTE :</b> Shimano Dura-Ace 9100, 11-speed, 11-28t. <br>
+                            <b>CHAINRINGS :</b> 52/36T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Dura-Ace Di2 R9150, 11-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_2" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_2"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/men's_tarmac_disc_comp.png" class="card-img-top_2" alt="Bike S-Works Men's Tarmac Disc Comp" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Men's Tarmac Disc Comp</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET : </b> Shimano threaded. <br>
+                            <b>CHAIN :</b> Shimano Ultegra, 11-speed. <br>
+                            <b>CRANKSET :</b> Shimano Ultegra R8000, HollowTech 2, 11-speed. <br>
+                            <b>SHIFT LEVERS :</b> Shimano Ultegra Disc R8020. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Ultegra R8000, braze-on. <br>
+                            <b>CASSETTE :</b> Shimano Ultegra R8000, 11-speed, 11-30t. <br>
+                            <b>CHAINRINGS :</b> 52/36T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Ultegra R8000-GS, medium cage.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_3" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_3" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_3"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/roubaix_comp.png" class="card-img-top_3" alt="Bike S-Works Roubaix Comp" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Roubaix Comp</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> Shimano Ultegra, BBR60. <br>
+                            <b>CHAIN :</b> Shimano Ultegra, 11-speed. <br>
+                            <b>CRANKSET :</b> Shimano Ultegra R8000, HollowTech 2, 11-speed. <br>
+                            <b>SHIFT LEVERS :</b> Shimano Ultegra Disc R8020. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Ultegra R8000, braze-on. <br>
+                            <b>CASSETTE :</b>  	Shimano Ultegra, 11-speed, 11-34t. <br>
+                            <b>CHAINRINGS :</b> 50/34T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Ultegra 8000, long cage, 11-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_4" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_4" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_4"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/women's_tarmac_disc_comp.png" class="card-img-top_4" alt="Bike S-Works Women's Tarmac Disc Comp" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Women's Tarmac Disc Comp</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> Included w/ crankset. <br>
+                            <b>CHAIN :</b> Shimano Ultegra, 11-speed. <br>
+                            <b>CRANKSET :</b> Shimano Ultegra R8000, HollowTech 2, 11-speed. <br>
+                            <b>SHIFT LEVERS :</b> Shimano Ultegra Disc R8020. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Ultegra R8000, braze-on. <br>
+                            <b>CASSETTE :</b> Shimano Ultegra R8000, 11-speed, 11-30t. <br>
+                            <b>CHAINRINGS :</b> 50/34T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Ultegra R8000-GS, medium cage.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_5" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_5" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_5"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/women's_pitch_sport.png" class="card-img-top_5" alt="Bike S-Works Women's Pitch Sport" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Women's Pitch Sport</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> Square taper, 73mm, internal bearings. <br>
+                            <b>CHAIN :</b> KMC X8EPT, 8-speed, anti-corrosion coating w/ reusable Missing Link. <br>
+                            <b>CRANKSET :</b> Stout, forged alloy, 3x8. <br>
+                            <b>SHIFT LEVERS :</b> Shimano EF500, EZ-Fire Plus, 8-speed. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Altus, Top Swing, 3-speed. <br>
+                            <b>CASSETTE :</b> SunRace, 8-speed, 11-34t. <br>
+                            <b>CHAINRINGS :</b> Steel, 44/34/24. <br>
+                            <b>REAR DERAILLEUR :</b>  	Shimano Acera, 8-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_6" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_6" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_6"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/men's_rockhopper_sport.png" class="card-img-top_6" alt="Bike S-Works Men's Rockhopper Sport" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Men's Rockhopper Sport</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> Square taper, 73mm, internal bearings. <br>
+                            <b>CHAIN :</b> KMC X8EPT, 8-speed, anti-corrosion coating w/ reusable Missing Link. <br>
+                            <b>CRANKSET :</b>  	Stout 3x8, forged alloy. <br>
+                            <b>SHIFT LEVERS :</b> Shimano ST-EF505, Ez-Fire Plus, 3x8. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Altus FD-M313, 34.9mm clamp, down-swing. <br>
+                            <b>CASSETTE :</b> Sunrace, 8-speed, 11-34t. <br>
+                            <b>CHAINRINGS :</b>  	44/32/22T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Acera 8-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_7" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_7" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_7"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/men's_turbo_levo_expert.png" class="card-img-top_7" alt="Bike S-Works Men's Turbo Levo Expert" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Men's Turbo Levo Expert</h5>
+                        <p class="card-text">
+                            <b>MOTOR :</b> Specialized 2.1, custom Rx Trail-tuned motor, 250W nominal. <br>
+                            <b>CHAIN :</b> KMC X11ET, 11-speed w/ Missing Link. <br>
+                            <b>CRANKSET :</b>  	Praxis, 2D cold-forged alloy, custom offset, 165mm. <br>
+                            <b>SHIFT LEVERS :</b>  	SRAM S700, single-click lever. <br>
+                            <b>BATTERY :</b> Turbo M2-700, fully integrated w/ rock guard, 700 Wh. <br>
+                            <b>CASSETTE :</b> SRAM XG-1175, 11-speed, 10-42t. <br>
+                            <b>CHAINRINGS :</b> 32T, custom steel. <br>
+                            <b>REAR DERAILLEUR :</b> SRAM X1, 11-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_8" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_8" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_8"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_sh/riprock_24.png" class="card-img-top_8" alt="Bike S-Works Riprock 24" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Riprock 24</h5>
+                        <p class="card-text">
+                            <b>BOTTOM BRACKET :</b> BSA, square taper. <br>
+                            <b>CHAIN :</b> KMC Z51, EPT anti-rust w/ Missing Link. <br>
+                            <b>CRANKSET :</b> Forged alloy, 152mm. <br>
+                            <b>SHIFT LEVERS :</b> Shimano Tourney, RevoShift, 8-Speed. <br>
+                            <b>FRONT DERAILLEUR :</b> Shimano Dura-Ace Di2 R9150, braze-on. <br>
+                            <b>CASSETTE :</b> Sunrace, 8-Speed, 11-34t. <br>
+                            <b>CHAINRINGS :</b> Steel, 30T. <br>
+                            <b>REAR DERAILLEUR :</b> Shimano Tourney TX, 8-speed.
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="converter_online" >
+    <section>
+        <h1 class="style_convert">Currency converter</h1>
+        <form class="converter">
+            <label class="border_area_conv">
+                From: <br>
+            <input type="text" class="btn btn-light" name="curr-from" style="font-size:90%;">
+            </label>
+            <label class="border_area_conv">
+                To: <br>
+            <input type="text" class="btn btn-light" name="curr-to" style="font-size:90%;">
+            </label>
+            <label class="border_area_conv">
+                Amount: <br>
+            <input type="number" class="btn btn-light" name="curr-amount" style="font-size:90%;">
+            </label>
+        
+            <label class="border_area_conv">
+                Converted: <br>
+            <output  class="btn btn-light" name="curr-converted" style="font-size:90%;"></output>
+            </label>
+            <div class="border_area_conv">
+                <button class="curr-convert btn btn-light"  style="font-size:100%;">Convert</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+
         
         <div class="about_bike">
-            <table class="area_text" style="width:80%" border="1">
+            <table class="area_text" style="width:70%">
                 <tr class="border_text">
                     <td class="main_text"> What is a road bike? A machine? A tool? Or is it a continuation of the body — a paintbrush 
                     completing a picture of your true self? We believe it's more than this, as words can't describe 
@@ -259,7 +654,7 @@
     </main>
     
     <footer>
-        <div class="email_container">
+        <div class="email_container"  style="background-image:url(img_h/fon_sign.png)">
             <div class="sign_me_up_1"> 
                 <p class="text_to_sign_up"> Sign me up! </p> 
             </div>
@@ -269,71 +664,80 @@
                 and event info straight to your inbox.
                 </p>
             </div>
+            
             <div class="form_send_email">
                 <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
-                    <label id="email_tittle_1" class="desk_email_text" for="Email" style="font-size:50px;"><strong>Email</strong></label>
+                    <label id="email_tittle_1" class="desk_email_text" for="Email" style="font-size:30px;"><strong>Email</strong></label>
                         <div class="write_to_join">
-                            <input id="Email" type="email" name="Email" placeholder="Write Your eMail" required="" size=50 style="font-size:30px;">
-                            <span class="button_email_send"> <input type="submit" value="Join" style="font-size:30px;"></span>
+                            <input id="Email" class="btn btn-light" type="email" name="Email" placeholder="Write Your eMail" required="" size=10 style="font-size:30px;">
+                            <span class="btn btn-light"> <input type="submit" value="Join" style="font-size:25px;"></span>
                         </div>
                 </form>
             </div>
         </div>
         
         <div class="social_container">
-            <div class="social_logo">
-                <img src="img_h/social.png" alt="Logo of text Social">
+                <div class="social_logo">
+                    <img src="img_h/social.png" alt="Logo of text Social">
+                </div>
+                <ul class="social_contact_link">
+                    <li class="facebook_logotipe">
+                        <a href="https://www.facebook.com/valentin.rachenchuk.5"> <img src="img_h/facebook_logo.png" alt="Facebook logo" style="width:50px; height: 50px"></a>
+                    </li>
+                    <li class="youtube_logotipe">
+                        <a href="https://www.youtube.com/"> <img src="img_h/youtube_logo.png" alt="Youtube logo" style="width:50px; height: 50px"></a>
+                    </li>
+                    <li class="instagram_logotipe">
+                        <a href="https://www.instagram.com"> <img src="img_h/instagram_logo.png" alt="Instagram logo" style="width:50px; height: 50px"></a>
+                    </li>
+                    <li class="whatsapp_logotipe">
+                        <a href="https://www.whatsapp.com"> <img src="img_h/whatsapp_logo.png" alt="Whatsapp-logo" style="width:50px; height: 50px"></a>
+                    </li>
+                </ul>
             </div>
-            <ul class="social_contact_link">
-                <li class="facebook_logotipe">
-                    <a href="https://www.facebook.com/valentin.rachenchuk.5"> <img src="img_h/facebook_logo.png" alt="Facebook logo" style="width:75px; height: 75px"></a>
-                </li>
-                <li class="youtube_logotipe">
-                    <a href="https://www.youtube.com/"> <img src="img_h/youtube_logo.png" alt="Youtube logo" style="width:75px; height: 75px"></a>
-                </li>
-                <li class="instagram_logotipe">
-                    <a href="https://www.instagram.com"> <img src="img_h/instagram_logo.png" alt="Instagram logo" style="width:75px; height: 75px"></a>
-                </li>
-                <li class="whatsapp_logotipe">
-                    <a href="https://www.whatsapp.com"> <img src="img_h/whatsapp_logo.png" alt="Whatsapp-logo" style="width:75px; height: 75px"></a>
-                </li>
-            </ul>
-        </div>
         
-        <div class="call_back_form">
-            <div class="call_back_logo">
-                <img class="call_back_logotipe" src="img_h/call_back.png" alt="Call back button">
+        <div class="call_back_form" style="background-image:url(img_h/fon_sign.png)">
+                <div class="call_back_logo">
+                    <p class="call_back_text">Call back form </p>
+                    
+<!--                    <img class="call_back_logotipe" src="img_h/call_back.png" style="width:50%; height: 50%" alt="Call back button"> -->
+                </div>
+                
+                <div class="number_name_form">
+                    <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
+                        <label id="name_1" class="desk" for="user_name" style="font-size:120%;"><strong>Your Name:</strong></label>
+                            <div class="write_name">
+                                <input id="user_name" class="btn btn-light" type="text" name="user_name" placeholder="Write Your Name" required="" size="20" style="font-size:20px;">
+                            </div>
+                        <label id="number_1" class="desk" for="user_number" style="font-size:120%;"><strong>Your Phone Number:</strong></label>
+                            <div class="write_number">
+                                <input id="user_number" class="btn btn-light" type="text" name="user_number" placeholder="Write Your Phone Number" required="" size="20" style="font-size:20px;">
+                            </div>
+                            <div class="button_call_back_send">
+                                <input type="submit" class="btn btn-light" value="Call Back" style="font-size:15px;">
+                            </div>
+                    </form>
+                </div>
             </div>
-            
-            <div class="number_name_form">
-                <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
-                    <label id="name_1" class="desk" for="user_name" style="font-size:50px;"><strong>Your Name</strong></label>
-                        <div class="write_name">
-                            <input id="user_name" type="text" name="user_name" placeholder="Write Your Name" required="" size="50" style="font-size:20px;">
-                        </div>
-                    <label id="number_1" class="desk" for="user_number" style="font-size:50px;"><strong>Your Phone Number</strong></label>
-                        <div class="write_number">
-                            <input id="user_number" type="text" name="user_number" placeholder="Write Your Phone Number" required="" size="50" style="font-size:20px;">
-                        </div>
-                        <div class="button_call_back_send">
-                            <input type="submit" value="Call Back" style="font-size:30px;">
-                        </div>
-                </form>
-            </div>
-        </div>
         
         <div class="end_line">
             <div class="about_button">
-                <a href=""> <img src="img_h/about_us.png" alt="Text About Us"></a>
+                <a href=""> <p> About Us </p> </a>
             </div>
             <div class="advocacy_button">
-                <a href=""> <img src="img_h/advocacy.png" alt="Text Advocacy"></a>
+                <a href=""> <p> Advocacy </p> </a>
             </div>
             <div class="contact_button">
-                <a href=""> <img src="img_h/contact.png" alt="Text Contact"></a>
+                <a href=""> <p> Contact </p></a>
             </div>
         </div>
     </footer>
     
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="js/shop.js"></script>
 </body>
 </html>
