@@ -69,5 +69,49 @@ main .show_filter {
 
 .grid_shopping {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
+    
 }
+
+.card {
+    margin: 0px 10px 20px 10px;
+    padding: 0 5px 0 5px;
+    
+}
+
+.alert {
+    position: fixed;
+    top: 20px; 
+    width: 50%;
+    text-align: center;
+    z-index: 10001;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    background-color: #2F4F4F;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+
+#cart-badge {
+    width: 35px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+.svg-inline--fa:hover {
+    text-decoration: none;
+    
+}
+
+.card-body {
+    text-align: center;
+    
+}
+
+.card-text {
+    padding: 0 0 20px 0;
+}
+
+

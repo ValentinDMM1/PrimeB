@@ -361,3 +361,21 @@ footer .end_line a {
 }
 
 
+
+.alert {
+    position: fixed;
+    top: 20px; 
+    width: 1vw;
+    text-align: center;
+    z-index: 10001;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    background-color: #2F4F4F;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+
+
+

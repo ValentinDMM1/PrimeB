@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prime Bike Shop</title>
     <link rel="icon" href="img_h/title_logo_pb.ico"/>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body  style="background-image:url(img_h/fon_social.jpg)">
@@ -36,7 +35,10 @@
                 </li>
                 <li class="bag_hidden_button">
                     <div class="bag_hidden_button">
-                        <a class="bag_list" href="bag.html"> <img src="img_h/korz.png" alt="Picture of Bag" style="width:40px; height: 40px"> </a>
+                        <a class="nav-link" href="#cartModal" data-toggle="modal">
+                            <i class="fa fa-shopping-basket"></i>
+                            <span id="cart-badge" class="badge badge-pill badge-light"></span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -48,20 +50,6 @@
     
     <main>
         <div class="bikes_grid_container">
-<!--
-            <span class="button_left">
-                <button>
-                    <img src="img_h/arrow_left.jpg" alt="Button left" style="width:3vw; height:3vw">
-                </button>
-            </span>
-            
-            <span class="button_right">
-                <button class="button_br">
-                    <img src="img_h/arrow_right.jpg" alt="Button right" style="width:3vw; height:3vw">
-                </button>
-            </span>
--->            
-            
             <div class="interesting_title">
                 <p class="it_exc"> Italian excellence </p>
                 <p class="dogma_f10"> new PINARELLO </p>
@@ -75,15 +63,6 @@
             
             
             
-            
-            
-<!--            <div class="background_f10">
-                <img src="img_h/f10_back.jpeg" alt="Picture of Bike Pinarello F10" style="width:100%; height: 100%">
-            </div>
-            <div class="background_nytro">
-                <img src="img_h/nytro_fon.jpeg" alt="Picture of Bike Pinarello BOLIDE TT" style="width:100%; height: 100%">
-            </div>
- -->           
  
  
  <div id="carousel_pinarello_bikes" class="carousel slide carousel-fade" data-ride="carousel">
@@ -110,7 +89,7 @@
 </div>   
             
             
-        </div>
+</div>
         
         
 
@@ -277,7 +256,7 @@
                 <div class="call_back_logo">
                     <p class="call_back_text">Call back form </p>
                     
-<!--                    <img class="call_back_logotipe" src="img_h/call_back.png" style="width:50%; height: 50%" alt="Call back button"> -->
+                    
                 </div>
                 
                 <div class="number_name_form">
@@ -300,6 +279,8 @@
         
         
         
+        
+        
         <div class="end_line">
             <div class="about_button">
                 <a href=""> <p> About Us </p> </a>
@@ -313,10 +294,50 @@
         </div>
     </footer>
     
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-dark order">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
      
-    <script src="js/index.js"></script>
+    <script src="js/shop.js"></script>
+    <script async src="js/smooth-scroll.js"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 document.querySelector('.curr-convert')
     .addEventListener('click', currConvert);
     
@@ -16,3 +17,4 @@ document.querySelector('.curr-convert')
             .innerText = convertedAmount.toFixed(2);
         });
 }
+

@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "title": "S-Works Venge",
+        "image": "s-works_venge.png",
+        "description": "Specialized S-Works Venge, the race bike of Peter Sagan.",
+        "price": 12520.00
+    },
+    {
+        "id": "2",
+        "title": "Men's Tarmac Disc Comp",
+        "image": "men's_tarmac_disc_comp.png",
+        "description": "Specialized Men's TARMAC DISC COMP Ultegra Roadbike - 2019.",
+        "price": 3374.99
+    },
+    {
+        "id": "3",
+        "title": "Roubaix Comp",
+        "image": "roubaix_comp.png",
+        "description": "Specialized Roubaix Comp Disc Road Bike 2019",
+        "price": 3149.99
+    },
+    {
+        "id": "4",
+        "title": "Women's Tarmac Disc Comp",
+        "image": "women's_tarmac_disc_comp.png",
+        "description": "Specialized Tarmac SL6 Sport Disc Women's Road Bike 2019",
+        "price": 3374.99
+    },
+    {
+        "id": "5",
+        "title": "Women's Pitch Sport",
+        "image": "women's_pitch_sport.png",
+        "description": "Specialized Women's Pitch Sport 650b 2018",
+        "price": 574.99
+    },
+    {
+        "id": "6",
+        "title": "Men's Rockhopper Sport",
+        "image": "men's_rockhopper_sport.png",
+        "description": "2019 Men's Rockhopper Sport",
+        "price": 829.99
+    },
+    {
+        "id": "7",
+        "title": "Men's Turbo Levo Expert",
+        "image": "men's_turbo_levo_expert.png",
+        "description": "Specialized Men's TURBO LEVO FSR EXPERT CARBON 29 MTB E-Bike - 2019 ",
+        "price": 8250.00
+    },
+    {
+        "id": "8",
+        "title": "S-Works Riprock 24",
+        "image": "riprock_24.png",
+        "description": "Specialized Riprock 24 Boys 2019 Kids Bike",
+        "price": 525.00
+    },
+    {
+        "id": "9",
+        "title": "Airnet MIPS",
+        "image": "airnet_mips.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 120.00
+    },
+    {
+        "id": "10",
+        "title": "MS-Works TT",
+        "image": "s_works_tt.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 300.00
+    },
+    {
+        "id": "11",
+        "title": "Dissident w/ ANGI",
+        "image": "s_works_dissident.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 380.99
+    },
+    {
+        "id": "12",
+        "title": "Torch 3.0 Road Shoes",
+        "image": "torch_shoes.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 210.90
+    },
+    {
+        "id": "13",
+        "title": "EXOS Road Shoes",
+        "image": "s_works_exos_road_shoes.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 450.00
+    },
+    {
+        "id": "14",
+        "title": "Hover Carbon Handlebars",
+        "image": "carbon_handlebars.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 185.00
+    },
+    {
+        "id": "15",
+        "title": "S-Works Phenom",
+        "image": "s_works_phenom.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 250.00
+    },
+    {
+        "id": "16",
+        "title": "Power Arc Pro Elaston 24",
+        "image": "power_arc_pro_elaston.png",
+        "description": "Race Bikes s-works-venge",
+        "price": 250.00
+    }
+]

@@ -7,7 +7,9 @@
     <title>Accessories</title>
     <link rel="icon" href="img_h/title_logo_pb.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
 <body style="background-image:url(img_h/fon_social.jpg)">
     
@@ -34,7 +36,10 @@
                 </li>
                 <li class="bag_hidden_button">
                     <div class="bag_hidden_button">
-                        <a class="bag_list" href="bag.html"> <img src="img_h/korz.png" alt="Picture of Bag" style="width:40px; height: 40px"> </a>
+                        <a class="nav-link" href="#cartModal" data-toggle="modal">
+                            <i class="fa fa-shopping-basket"></i>
+                            <span id="cart-badge" class="badge badge-pill badge-light"></span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -44,22 +49,24 @@
     <main>
         <div class="control_bar">
             <div class="show_filter">
-                <div class="hide"><img src="img_sh/menu_logo.png" alt="button to hide filter" style="width:100px; height: 100px">
-                    <span class="filter_text">HIDE FILTER</span>
+                <div class="hide"><img src="img_sh/menu_logo.png" alt="button to hide filter" style="width:30px; height: 30px">
+                    <span class="filter_text">FILTER</span>
                 </div>
                 
-                <div class="by_price"><img src="img_sh/sort1.png" alt="Button to sort list by price" style="width:100px; height: 100px">
+                <div class="by_price"><img src="img_sh/sort1.png" alt="Button to sort list by price" style="width:30px; height: 30px">
                     <span class="sort_price_text"><img src="img_sh/sort2.png" 
-                    alt="button to sort list by price" style="width:100px; height: 100px">SORTING BY PRICE</span>
-                </div> <br>
-                <div class="by_date"><img src="img_sh/sort3.png" alt="Button to sort list by date" style="width:100px; height: 100px">
-                    <span class="sort_date_text">SORTING BY DATE</span>
+                    alt="button to sort list by price" style="width:30px; height: 30px">PRICE</span>
+                </div>
+                <div class="by_date"><img src="img_sh/sort3.png" alt="Button to sort list by date" style="width:30px; height: 30px">
+                    <span class="sort_date_text">DATE</span>
                 </div>
             </div>
         </div>
         
         
-        <div class="show_categories"><img src="img_sh/minus.png" alt="Button to hide categories" style="width:100px; height: 100px">
+<div class="grid_shopping">        
+    <div class="cont_filtre_choose">    
+        <div class="show_categories"> 
             <div class="categories_text">CATEGORIES</div>
                 <aside class="categories">
                     <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
@@ -70,7 +77,7 @@
                 </aside>
         </div>
         
-        <div class="show_gender"><img src="img_sh/minus.png" alt="button to hide gender" style="width:100px; height: 100px">
+        <div class="show_gender">
             <div class="gender_text">GENDER</div>
                 <aside class="gender">
                     <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
@@ -81,7 +88,7 @@
                 </aside>
         </div>
         
-        <div class="show_group"><img src="img_sh/minus.png" alt="Button to hide filter group of goods" style="width:100px; height: 100px">
+        <div class="show_group">
             <div class="group_text">GROUP</div>
                 <aside class="group">
                     <form action="https://formspree.io/vrahenchuk@gmail.com" method="post" target="_blank">
@@ -91,174 +98,375 @@
                         <input type="radio" name="group" value="hendlebar"> Hendlebar<br>
                     </form>
                 </aside>
-        </div>
+            </div>
+    </div>
         
-        <div class="eqioment_area">
-            <table id="equiplist" style="width:100%" border="1">
-                <tr>
-                    <td>
-                        <div class="equip_block_1">
-                            <a href="https://www.specialized.com/gb/en/airnet-mips/p/155449?color=263845-155449"> 
-                                <article class="equip_1_picture"> 
-                                    <div class="equip_1_image">
-                                       <img class="equip_1" alt="Bike S-Works helmet" src="img_eq/airnet_mips.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_1">
-                                        <h3 style="color:black;"> Airnet MIPS </h3>
-                                            <p style= "color: black;">
-                                                <span class="price" > $120.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_2">
-                            <a href="https://www.specialized.com/gb/en/s-works-tt/p/162032?color=251041-162032"> 
-                                <article class="equip_2_picture"> 
-                                    <div class="equip_2_image">
-                                       <img class="equip_2" alt="Bike Helmet Black" src="img_eq/s_works_tt.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_2">
-                                        <h3 style="color:black;"> MS-Works TT </h3>
-                                            <p style= "color: black;">
-                                                <span class="price" > $300.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_3">
-                            <a href="https://www.specialized.com/gb/en/s-works-dissident-w-angi/p/162033?color=251061-162033"> 
-                                <article class="equip_3_picture"> 
-                                    <div class="equip_3_image">
-                                       <img class="equip_3" alt="Bike Helmet S-Works Dissident w/ ANGI" src="img_eq/s_works_dissident.png" style="width:400px; height:240px;" > 
-                                    </div>
-                                    <div class="name_price_text_3">
-                                        <h3 style="color:black;"> S-Works Dissident w/ ANGI </h3>
-                                            <p style= "color: black;">
-                                                <span class="price" > $380.99 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="equipblock_4">
-                            <a href="https://www.specialized.com/gb/en/torch-3-0-road-shoes/p/134043?color=228317-134043"> 
-                                <article class="equip_4_picture"> 
-                                    <div class="equip_4_image">
-                                       <img class="equip_4" alt="Bike Torch 3.0 Road Shoes" src="img_eq/torch_shoes.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_4">
-                                        <h3 style="color:black;"> Torch 3.0 Road Shoes </h3>
-                                            <p style= "color: black;">
-                                                <span class="price"> $210.99 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_5">
-                            <a href="https://www.specialized.com/gb/en/s-works-exos-road-shoes/p/157750?color=237037-157750"> 
-                                <article class="equip_5_picture"> 
-                                    <div class="equip_5_image">
-                                       <img class="equip_5" alt="Bike S-Works Women's Pitch Sport" src="img_eq/s_works_exos_road_shoes.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_5">
-                                        <h3 style="color:black;"> S-Works EXOS Road Shoes </h3>
-                                            <p style= "color: black;">
-                                                <span class="price"> $450.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_6">
-                            <a href="https://www.specialized.com/gb/en/s-works-hover-carbon-handlebars/p/156309?color=229729-156309"> 
-                                <article class="equip_6_picture"> 
-                                    <div class="equip_6_image">
-                                       <img class="equip_6" alt="S-Works Hover Carbon Handlebars" src="img_eq/carbon_handlebars.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_6">
-                                        <h3 style="color:black;"> S-Works Hover Carbon Handlebars </h3>
-                                            <p style= "color: black;">
-                                                <span class="price"> $185.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="equipblock_7">
-                            <a href="https://www.specialized.com/gb/en/s-works-phenom/p/156449?color=230819-156449"> 
-                                <article class="equip_7_picture"> 
-                                    <div class="equip_7_image">
-                                       <img class="equip_7" alt="Bike S-Works S-Works Phenom" src="img_eq/s_works_phenom.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_7">
-                                        <h3 style="color:black;"> S-Works Phenom </h3>
-                                            <p style= "color: black;">
-                                                <span class="price" > $250.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_8">
-                            <a href="https://www.specialized.com/gb/en/power-arc-pro-elaston/p/157866?color=237452-157866"> 
-                                <article class="equip_8_picture"> 
-                                    <div class="equip_8_image">
-                                       <img class="equip_8" alt="Bike S-Works Power Arc Pro Elaston" src="img_eq/power_arc_pro_elaston.png" style="width:400px; height:240px;"> 
-                                    </div>
-                                    <div class="name_price_text_8">
-                                        <h3 style="color:black;"> Power Arc Pro Elaston 24</h3>
-                                            <p style= "color: black;">
-                                                <span class="price"> $250.00 </span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="equipblock_9">
-                            <a href="https://primeb-dmm1vr.c9users.io/equip.html"> 
-                                <article class="nextpage_area"> 
-                                    <div class="nextpage_image">
-                                       <img class="nextpage_symbol" alt="symbol of nextpage" src="img_sh/next_page.png"> 
-                                    </div>
-                                    <div class="nextpage_text">
-                                        <h3 style="color:black;"> Next page </h3>
-                                            <p style= "color: black;">
-                                                <span class="underline"></span>
-                                            </p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+
+            <div class="row mx-lg-1">
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/airnet-mips/p/155449?color=263845-155449">
+                    <img src="img_eq/airnet_mips.png" class="card-img-top_1" alt="Bike S-Works helmet" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Airnet MIPS </h5> 
+                        <p class="card-text"> $120.00 </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_1" > Info </a>
+                        <button class="btn btn-dark buy" data-id="9">Buy</button>
+                     </div> 
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-3">
+                    <a href="https://www.specialized.com/gb/en/s-works-tt/p/162032?color=251041-162032"> 
+                    <img src="img_eq/s_works_tt.png" class="card-img-top_2" alt="Bike Helmet Black" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> MS-Works TT  </h5>
+                        <p class="card-text"> $300.00  </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_2" >Info</a>
+                        <button class="btn btn-dark buy" data-id="10">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/s-works-dissident-w-angi/p/162033?color=251061-162033"> 
+                    <img src="img_eq/s_works_dissident.png" class="card-img-top_3" alt="Bike Helmet S-Works Dissident w/ ANGI" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works Dissident w/ ANGI  </h5>
+                        <p class="card-text"> $380.99  </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_3" >Info</a>
+                        <button class="btn btn-dark buy" data-id="11">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/torch-3-0-road-shoes/p/134043?color=228317-134043"> 
+                    <img src="img_eq/torch_shoes.png" class="card-img-top_4" alt="Bike Torch 3.0 Road Shoes" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Torch 3.0 Road Shoes  </h5>
+                        <p class="card-text"> $210.99 </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_4" >Info</a>
+                        <button class="btn btn-dark buy" data-id="12">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-3">
+                    <a href="https://www.specialized.com/gb/en/s-works-exos-road-shoes/p/157750?color=237037-157750"> 
+                    <img src="img_eq/s_works_exos_road_shoes.png" class="card-img-top_5" alt="Bike S-Works Women's Pitch Sport" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works EXOS Road Shoes  </h5>
+                        <p class="card-text"> $450.00  </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_5" >Info</a>
+                        <button class="btn btn-dark buy" data-id="13">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/s-works-hover-carbon-handlebars/p/156309?color=229729-156309"> 
+                    <img src="img_eq/carbon_handlebars.png" class="card-img-top_6" alt="S-Works Hover Carbon Handlebars" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works Hover Carbon Handlebars  </h5>
+                        <p class="card-text"> $185.00 </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_6" >Info</a>
+                        <button class="btn btn-dark buy" data-id="14">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/s-works-phenom/p/156449?color=230819-156449"> 
+                    <img src="img_eq/s_works_phenom.png" class="card-img-top_7" alt="Bike S-Works S-Works Phenom" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> S-Works Phenom  </h5>
+                        <p class="card-text"> $250.00  </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_7" >Info</a>
+                        <button class="btn btn-dark buy" data-id="15">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card product col-12 col-sm-6 col-md-4">
+                    <a href="https://www.specialized.com/gb/en/power-arc-pro-elaston/p/157866?color=237452-157866"> 
+                    <img src="img_eq/power_arc_pro_elaston.png" class="card-img-top_8" alt="Bike S-Works Power Arc Pro Elaston" style="width: 100%"> </a>
+                      <div class="card-body">
+                        <h5 class="card-title"> Power Arc Pro Elaston 24 </h5>
+                        <p class="card-text"> $250.00  </p>
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#productInfo_8" >Info</a>
+                        <button class="btn btn-dark buy" data-id="16">Buy</button>
+                     </div>
+                </article>
+                
+                <article class="card col-12 col-sm-6 col-md-3">
+                    <a href="https://primeb-dmm1vr.c9users.io/shoppage.html">
+                    <img src="img_sh/next_page.png" class="card-img-top" alt="symbol of nextpage" style="width: 50%">
+                      <div class="card-body">
+                        <h5 class="card-title"> Next page </h5>
+                     </div> </a>
+                </article>
+            </div>
+
+<div class="modal fade" id="productInfo_1" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_1" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_1"><strong> S-Works </strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/airnet_mips_2.png" class="card-img-top_1" alt="Bike S-Works helmet" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Airnet MIPS </h5>
+                        <p class="card-text">
+                            <b> • </b> Ultra-light Mindset HairPort micro-dial fit system with height adjustability for the perfect fit. <br>
+                            <b> • </b> 4th Dimension Cooling System with deep internal channels, large vents, and aligned exhaust ports. <br>
+                            <b> • </b> Composite matrix internal reinforcement allows larger vents for enhanced cooling. <br>
+                            <b> • </b> Vent grippers integrated at the front and rear for secure eyewear storage. <br>
+                            <b> • </b> Reflective decals for increased visibility to motorists in low-light conditions. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="9">Buy</button>
+          </div>
         </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productInfo_2" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_2" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_2"><strong> S-Works </strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/s_works_tt_2.png" class="card-img-top_2" alt="Bike Helmet Black" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : MS-Works TT </h5>
+                        <p class="card-text">
+                            <b> • </b> Fit system is ANGi crash sensor ready. <br>
+                            <b> • </b> New MIPS SL is the lightest, most ventilated MIPS protection. <br>
+                            <b> • </b> Ultra-light Mindset micro-dial fit system with height adjustability for the perfect fit. <br>
+                            <b> • </b> Innovative Gill Vent design improves airflow and reduces drag. <br>
+                            <b> • </b> Thin, soft, and lightweight 4X DryLite webbing won’t stretch out with sweat or water. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="10">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_3" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_3" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_3"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/s_works_dissident_2.png" class="card-img-top_3" alt="Bike Helmet S-Works Dissident w/ ANGI" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : S-Works Dissident w/ ANGI  </h5>
+                        <p class="card-text">
+                            <b> • </b> Engineered to protect World Cup downhill and gravity riders. <br>
+                            <b> • </b> Lightweight Carbon Matrix shell—target weight 1000g. <br>
+                            <b> • </b> Meets the ASTM DH safety testing standards for impact protection and chin bar performance. <br>
+                            <b> • </b> Speaker compatible. <br>
+                            <b> • </b> Removable washable liner and cheek pads. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="11">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_4" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_4" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_4"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/torch_shoes_2.png" class="card-img-top_4" alt="Bike Torch 3.0 Road Shoes" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Torch 3.0 Road Shoes </h5>
+                        <p class="card-text">
+                            <b> • </b> Approximate weight: 248g (1/2 pair, Size 42). <br>
+                            <b> • </b> Three-bolt cleat pattern fits all major road pedals. <br>
+                            <b> • </b> Standard Fit for support and all-day comfort. <br>
+                            <b> • </b> Dual Boa® S2-SV Snap dial closure for on-the-fly micro-adjustment, backed by the Boa® Lifetime Guarantee. <br>
+                            <b> • </b> Body Geometry sole construction and footbeds are ergonomically designed and scientifically tested to boost power. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="12">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_5" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_5" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_5"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/s_works_exos_road_shoes_2.png" class="card-img-top_5" alt="Bike S-Works Women's Pitch Sport" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : S-Works EXOS Road Shoes </h5>
+                        <p class="card-text">
+                            <b> • </b> Approximate weight: 150g (1/2 pair, Size 42). <br>
+                            <b> • </b> Three-bolt cleat pattern fits all major road pedals. <br>
+                            <b> • </b> Form Fit last with a malleable vamp creates a next-to-foot fit. <br>
+                            <b> • </b> Non-slip, replaceable heel tread with internally recessed screws for security. <br>
+                            <b> • </b> Titanium alloy cleat nuts can rotate to position pedal/cleats 5mm rearward.<br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="13">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_6" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_6" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_6"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/carbon_handlebars.png" class="card-img-top_6" alt="S-Works Hover Carbon Handlebars" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : S-Works Hover Carbon Handlebars </h5>
+                        <p class="card-text">
+                            <b> • </b> FACT carbon construction offers an optimized blend of durability and light overall weight. <br>
+                            <b> • </b> 15mm rise for additional rider fit range. <br>
+                            <b> • </b> Shallow Bend Drop: 123mm drop x 75mm reach. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="14">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_7" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_7" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_7"><strong> S-Works </strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/s_works_phenom_2.png" class="card-img-top_7" alt="Bike S-Works S-Works Phenom" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : S-Works Phenom </h5>
+                        <p class="card-text">
+                            <b> • </b> Ultra-light, strong, and oversized FACT carbon rails. <br>
+                            <b> • </b> Size 143mm / Weight 153g. <br>
+                            <b> • </b> Level 2 padding: Medium density foam for bike feel with additional cushioning. <br>
+                            <b> • </b> FACT carbon fibre shell is flex-tuned for support and ride compliance. <br>
+                            <b> • </b> Super-light, EVA padding for comfort and support on longer rides. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="15">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="productInfo_8" tabindex="-1" role="dialog" aria-labelledby="productInfoTitle_8" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="productInfoModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoTitle_8"><strong> S-Works</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <img src="img_eq/power_arc_pro_elaston_2.png" class="card-img-top_8" alt="Bike S-Works Power Arc Pro Elaston" style="width: 100%">
+                <div >
+                        <h5 class="card-title">model : Power Arc Pro Elaston 24 </h5>
+                        <p class="card-text">
+                            <b> • </b> Stiff FACT carbon fibre shell is tuned for support and ride compliance. <br>
+                            <b> • </b> Elaston foam provides unrivalled comfort and support on longer rides. <br>
+                            <b> • </b> Lightweight, durable, and hollow titanium rails. <br>
+                            <b> • </b> Level II padding: Medium density foam for bike feel with additional cushioning. <br>
+                            <b> • </b> SWAT™-compatible mounts moulded into the saddle base allow for sleek and integrated storage solutions. <br>
+                        </p>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark buy" data-id="16">Buy</button>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="converter_online" >
+    <section>
+        <h1 class="style_convert">Currency converter</h1>
+        <form class="converter">
+            <label class="border_area_conv">
+                From: <br>
+            <input type="text" class="btn btn-light" name="curr-from" style="font-size:90%;">
+            </label>
+            <label class="border_area_conv">
+                To: <br>
+            <input type="text" class="btn btn-light" name="curr-to" style="font-size:90%;">
+            </label>
+            <label class="border_area_conv">
+                Amount: <br>
+            <input type="number" class="btn btn-light" name="curr-amount" style="font-size:90%;">
+            </label>
+        
+            <label class="border_area_conv">
+                Converted: <br>
+            <output  class="btn btn-light" name="curr-converted" style="font-size:90%;"></output>
+            </label>
+            <div class="border_area_conv">
+                <button class="curr-convert btn btn-light"  style="font-size:100%;">Convert</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+
         
         <div class="about_bike">
-            <table class="area_text" style="width:80%" border="1">
+            <table class="area_text" style="width:70%">
                 <tr class="border_text">
                     <td class="main_text"> What is a road bike? A machine? A tool? Or is it a continuation of the body — a paintbrush 
                     completing a picture of your true self? We believe it's more than this, as words can't describe 
@@ -323,7 +531,7 @@
                 <div class="call_back_logo">
                     <p class="call_back_text">Call back form </p>
                     
-<!--                    <img class="call_back_logotipe" src="img_h/call_back.png" style="width:50%; height: 50%" alt="Call back button"> -->
+
                 </div>
                 
                 <div class="number_name_form">
@@ -360,8 +568,51 @@
     </footer>
     
     
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-dark order">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    
+    <script src="js/shop.js"></script>
+    <script async src="js/smooth-scroll.js"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
+
 </body>
 </html>
