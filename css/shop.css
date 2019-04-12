@@ -8,7 +8,6 @@ main .show_filter {
     font-family: 'Cabin Sketch', cursive;
 }
 
-
 .converter_online {
     display: flex;
     justify-content: space-evenly;
@@ -44,6 +43,7 @@ main .show_filter {
     font-family: 'Cabin Sketch', cursive
 }
 
+
 .main_text {
     text-align: center;
 } 
@@ -60,7 +60,6 @@ main .show_filter {
 
 .show_categories {
     font-size: 110%;
-    
 }
 
 .show_gender {
@@ -70,13 +69,11 @@ main .show_filter {
 .grid_shopping {
     display: grid;
     grid-template-columns: 1fr 7fr;
-    
 }
 
 .card {
     margin: 0px 10px 20px 10px;
     padding: 0 5px 0 5px;
-    
 }
 
 .alert {
@@ -102,16 +99,17 @@ main .show_filter {
 
 .svg-inline--fa:hover {
     text-decoration: none;
-    
 }
 
 .card-body {
     text-align: center;
-    
 }
 
 .card-text {
     padding: 0 0 20px 0;
 }
 
+.video_rub {
+    width: 100%;
+}
 

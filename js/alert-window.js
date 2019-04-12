@@ -1,5 +1,5 @@
 function showAlert(message, success = true) {
-    const alertTemplate = 
+    const alertTemplate =
         `<div class="alert alert-dismissible ${success ? 'alert-success' : 'alert-danger'}" role="alert">
           <strong>${message}</strong> 
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
